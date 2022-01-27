@@ -1,0 +1,67 @@
+@import "vars.scss";
+
+@media screen and (max-width: 1260px) {
+  .icon-line, .menu-container { transition: all ease 0.3s; }
+  #top-bar { top: 0; z-index: 12; height: 70px;}
+
+  .icon-menu:hover { cursor: pointer;}
+  .menu-container { transform: scaleY(0); margin-top: 70px; position: relative; background: white; width: auto; opacity: 0;}
+  .mostrar { transform: scaleY(1); opacity: 1; visibility: visible; right: 0;} //Estilo js
+
+  .icon-menu { width: 35px; height: 35px; display: block; right: 0; z-index: 999; position: absolute; right: 30px;}
+  .icon-line { display: block; width: 35px; height: 5px; border-radius: 4px; background: $primary;position: absolute; }
+  .icon-line:nth-child(2) { margin-top: 13px;}
+  .icon-line:nth-child(3)  { margin-top: 25px;}
+  
+  /*Estilos js*/
+  .rotate-1 {margin-top: 12px !important; transform: rotate(45deg) scaleX(-1);}
+  .rotate-2 {margin-top: 12px !important; transform: rotate(-45deg) scaleX(-1);}
+  .rotate-3 {margin-top: 12px !important; transform: rotate(-45deg) scaleX(-1); opacity: 0;}
+
+  /*
+  .rotate-1 {transform: rotate(45deg);margin-top: 12px;}
+  .rotate-2 {transform: rotate(-45deg);margin-top: 12px !important;}
+  .opacity-0 {opacity: 0;}
+/**/
+  header nav { visibility: hidden; position: absolute; right: 0; width: 350px; text-align: right; padding-right: 35px; overflow-y: scroll; right: -100%; transition: all ease-in-out 0.3s;}
+  header nav ul li{ display: block; margin: 15px 0; border-bottom: solid 2px #f1f1f1;}
+  header nav ul li ul{ position: relative;}
+  header nav li { font-size: 18px;}
+  header nav ul li ul li { background: $gray;}
+  header nav { margin-top: 25px ;}
+  header a { color: $dark;}
+  header a:hover { color: $dark;}
+}
+
+@media screen and (max-width: 900px) {
+
+  iframe { max-height: 480px; }
+  .cover { height: auto; min-height: 400px;}
+  .cover img { height: auto; width: auto;}  
+  .section {height: auto; padding: 50px 0;}
+  .plan { margin-bottom: 35px;}
+  .hosting-speed .thumb { background-attachment: initial;}
+  //
+}
+@media screen and (max-width: 480px) {
+  .custom-logo { height: 40px;}
+
+  header nav { width: 100%;}
+
+  .benefit { margin-bottom: 35px;}
+  //.thumb-container{ height: 200px;}
+  .text-excerpt { min-height: auto;}
+  .plan { width: 90%;}
+  .text-sm { font-size: 18px; }
+  .text-md { font-size: 22px; }
+  .text-lg { font-size: 27px;}
+  .text-xl { font-size: 32px;}
+  .display-4 { font-size: 2rem;}
+  .display-5 { font-size: 2.5rem;}
+
+  .cover-single { background-image: url("img/brokerland-single-phone.jpg"); background-attachment: initial; background-size: 100% 100%; }
+
+  footer ul li { display: block; margin-bottom: 1em;}
+}
+
+/*# sourceMappingURL=responsive.css.map */
